@@ -22,7 +22,7 @@
 
 ## 部署
 
-nni的安装可以参考[NNI官方文档](https://nni.readthedocs.io/zh/latest/Overview.html),在这比主要介绍代码修改部分及两个配置文件[search_space.json](##search_space.json)和[config.yml](## config.yml)。
+nni的安装可以参考[NNI官方文档](https://nni.readthedocs.io/zh/latest/Overview.html),在这比主要介绍代码修改部分及两个配置文件[search_space.json](#search_space.json)和[config.yml](#config.yml)。
 
 ## 源代码
 
