@@ -66,9 +66,20 @@ nni.report_final_result(test_acc)
 }
 ~~~
 
+
+
 ## config.yml
 
 官方说明[链接](https://nni.readthedocs.io/zh/latest/Tutorial/ExperimentConfig.html)
+
+### 指定gpu
+
+~~~config
+localConfig:
+    gpuIndices: 2,3
+~~~
+
+
 
 ## Tips
 
@@ -77,6 +88,24 @@ nni.report_final_result(test_acc)
 ~~~bash
 nnictl create --config config.yml --port xxxx
 ~~~
+
+
+
+### 报错
+
+#### S1 
+
+Specified GPU index not found
+
+~~~bash
+ps aux | grep gpu_metric
+显示nni的nvidia-smi的使用情况
+kill it
+~~~
+
+
+
+
 
 ## License
 
